@@ -28,7 +28,7 @@ my $currentGene = "";
 while (my $line = <GFF3>)
 {
 	chomp $line;
-	next if ($line =~ /^#/); #skip commented lines (STARTING WITH HASHTAG !!!, some @#@$&Q#$ JGI ID's have ### too)
+	next if ($line =~ /^#/); #skip commented lines
 	
 	my @parts = split ("\t", $line);
 	if (@parts < 2) { next; }
