@@ -7,8 +7,6 @@ install.packages("genoPlotR", repos="http://R-Forge.R-project.org")
 ##loading the package
 library(genoPlotR)
 
-setwd("../analyses/antismash2/CBET3_02473")
-
 #load the dnas (annotation files)
 CBE1 <- read_dna_seg_from_tab(("CBE2473.annots"), header = TRUE)
 CBE2 <- read_dna_seg_from_tab(("CBE2338.annots"), header = TRUE)
