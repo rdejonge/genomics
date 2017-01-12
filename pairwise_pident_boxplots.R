@@ -7,7 +7,7 @@ library(ggplot2)
 library(plotly)
 library(reshape2)
 
-setwd("C:/Users/Ronnie de Jonge/Documents/MEGAsync/Sync/work/current/Cercospora/CTB_Aurofusarin/")
+setwd("..")
 
 df <- read.table("cbet_best_allspeciesheadersX", header = T, fill = F)
 df_col_means <- colMeans(df, na.rm = T)
