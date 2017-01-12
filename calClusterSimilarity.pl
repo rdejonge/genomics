@@ -1,11 +1,13 @@
 #!/usr/bin/perl
 
 ####
-#Perl script by Ronnie de Jonge, ronnie.dejonge@gmail.com OR ronnie.dejonge@psb.ugent.be
+#Perl script by Ronnie de Jonge, r.dejonge@uu.nl OR ronnie.dejonge@psb.vib-ugent.be
 #Created: January 5, 2017
 #Last modified: January 5, 2017
-#usage: perl calClusterSimilarity.pl [gff3_1] [gff3_2] [mclOutput.iadhore] [out_prefix] [cluster_length] [allowed_gap]
+#usage: perl calClusterSimilarity.pl [gff3_1] [gff3_2] [mclOutput.iadhore] [out_prefix] [cluster_length (odd)] [allowed_gap] [term1] [term2]
 #
+#mclOutput.iadhore is pre-calculated using anlayseOrthoMCL.pl
+#terms 1 and 2 refer to methods to match protein with gene/transcript ids if these weren't identical. if they were, 'special' should be used as term
 #Description: 
 #Store gene models (important is protein_id matching mcl output) and order on scaffolds and return for each cluster (of size x) the "amount" of synteny
 ####
