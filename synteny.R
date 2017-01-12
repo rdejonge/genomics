@@ -9,7 +9,7 @@ library(lme4)
 library(nlme)
 library(labeling)
 
-setwd("C:/Users/Ronnie de Jonge/Documents/MEGAsync/Sync/work/current/Cercospora/D_Cercospora_sync/Manuscript/Drafts/draft6/manuscript_/")
+setwd("..")
 
 data <- read.table("synteny_scores.txt", header = T)
 data_melted <- melt(data = data, measure.vars = c("Cg", "Mo"))
